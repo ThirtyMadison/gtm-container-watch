@@ -26,8 +26,7 @@ jobs:
   gtmWatch:
     docker:
       - image: cimg/node:15.1
-    context:
-      - shared-build-context-1
+
     steps:
       - checkout
       - restore_cache:
@@ -47,4 +46,7 @@ jobs:
 workflows:
   keeps:
     jobs:
-      - gtmWatch
+      - gtmWatch:
+          context:
+            - shared-build-context-1
+      
