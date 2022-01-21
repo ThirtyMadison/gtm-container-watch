@@ -1,7 +1,7 @@
 version: 2.1
 
 commands:
-  gtmwatch:
+  runwatch:
     description: Gets GTM data at site and pushes it to GH
     parameters:
       targets:
@@ -39,9 +39,11 @@ jobs:
           key: node-deps-v1-{{ .Branch }}-{{checksum "package-lock.json"}}
           paths:
             - ~/.npm
-      - run:
-          name: Run GTM Watch
-          command: npm start
+      - runwatch:
+          targets: keeps.com
+          github_tracking_branch: test
+          github_repo: gtm-container-watch
+          github_owner: ThirtyMadison
 
 workflows:
   keeps:
