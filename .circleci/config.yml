@@ -40,7 +40,7 @@ jobs:
           paths:
             - ~/.npm
       - runwatch:
-          targets: keeps.com
+          targets: 'https://www.keeps.com/'
           github_tracking_branch: test
           github_repo: gtm-container-watch
           github_owner: ThirtyMadison
