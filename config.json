@@ -1,7 +1,0 @@
-{
-  "TARGETS": ["https://keeps.com"],
-  "TAG_MANAGER_BASEURL": "https://www.googletagmanager.com/gtm.js?id=",
-  "GITHUB_REPO": "gtm-tracking",
-  "GITHUB_OWNER": "citizen-thayne",
-  "GITHUB_TRACKING_BRANCH": "tracking"
-}
