@@ -41,8 +41,8 @@ const githubCreateOrUpdate = async (data, host) => {
   const githubObj = {
     owner: config.GITHUB_OWNER,
     repo: config.GITHUB_REPO,
-    path: "containers/" + host + "/" + data.gtmId + ".js",
-    message: "Auto Update",
+    path: "gtm/" + host + "/" + data.gtmId + ".js",
+    message: "GTM Update. For more details, see: https://github.com/ThirtyMadison/gtm-container-watch",
     content: file,
     branch: config.GITHUB_TRACKING_BRANCH,
   }
