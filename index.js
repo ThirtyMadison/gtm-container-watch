@@ -52,7 +52,7 @@ const githubCreateOrUpdate = async (data, host) => {
     .getContents({
       owner: config.GITHUB_OWNER,
       repo: config.GITHUB_REPO,
-      path: "containers/" + host + "/" + data.gtmId + ".js",
+      path: "gtm/" + host + "/" + data.gtmId + ".js",
       ref: config.GITHUB_TRACKING_BRANCH,
     })
     .then((item) => {
