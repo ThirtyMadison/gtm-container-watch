@@ -46,14 +46,7 @@ jobs:
           github_owner: ThirtyMadison
 
 workflows:
-  keeps:
-    triggers:
-      - schedule:
-          cron: "0 * * * *"
-          filters:
-             branches:
-               only:
-                 - main                 
+  keeps:          
     jobs:
       - gtmWatch:
           context:
