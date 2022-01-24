@@ -57,11 +57,11 @@ const githubCreateOrUpdate = async (data, host) => {
     })
     .then((item) => {
       if (file !== item.data.content.replace(/\s/g, "")) {
-        result = github.repos.updateFile(Object.assign(githubObj, { sha: item.data.sha }))
+        result = github.repos.createOrUpdateFile(Object.assign(githubObj, { sha: item.data.sha }))
       }
     })
     .catch((err) => {
-      result = github.repos.createFile(githubObj)
+      result = github.repos.createOrUpdateFile(githubObj)
     })
 
   return result
