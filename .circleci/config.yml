@@ -41,8 +41,13 @@ jobs:
             - ~/.npm
       - runwatch:
           targets: 'https://www.keeps.com/'
-          github_tracking_branch: test
-          github_repo: gtm-container-watch
+          github_tracking_branch: master
+          github_repo: platform
+          github_owner: ThirtyMadison
+      - runwatch:
+          targets: 'https://www.keeps.com/'
+          github_tracking_branch: master
+          github_repo: keeps-frontend
           github_owner: ThirtyMadison
 
 workflows:
