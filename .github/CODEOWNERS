@@ -1,3 +1,5 @@
+*                   @ThirtyMadison/eng-growth-keeps-cove
+
 .circleci/            @ThirtyMadison/infra
 .github/              @ThirtyMadison/infra
 .infra/               @ThirtyMadison/infra
