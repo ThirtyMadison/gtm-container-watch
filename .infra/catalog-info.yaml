@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    circleci.com/project-slug: github/ThirtyMadison/gtm-container-watch
+    github.com/project-slug: ThirtyMadison/gtm-container-watch
+  description: Gtm Container Watch
+  labels:
+    has_frontend: 'False'
+  links:
+  - icon: github
+    title: Github
+    url: https://github.com/ThirtyMadison/gtm-container-watch
+  name: gtm-container-watch
+  tags:
+  - javascript
+spec:
+  dependsOn: []
+  lifecycle: production
+  type: service
